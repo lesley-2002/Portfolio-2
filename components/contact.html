@@ -1,0 +1,66 @@
+<h2 id="contact-title" style="color: #317ece; text-align: center; font-size: 2em;">Contact us now</h2>
+<p id="contact-subtitle" style="font-size: 1.2em; text-align: center; margin-bottom: 1em;">And recieve a respond within 1-2 businessdays</p>
+
+<div class="contact-form">
+    <div class="col-1">
+        <img src="assets/logo-contact.png" alt="">
+    </div>
+    <div class="col-2">
+        <form id="form" action="">
+
+            <div id="info"></div>
+            <label class="namelabel" for="name">Name:</label>
+            <div class="input-container">
+                <i class="fas fa-user-alt"></i>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+
+            <label class="emaillabel" for="email">E-mail:</label>
+            <div class="input-container">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <label class="phonelabel" for="phone">Phone:</label>
+            <div class="input-container">
+                <i class="fas fa-phone"></i>
+                <input type="text" name="phone" id="phone">
+            </div>
+
+            <label class="subjectlabel" for="subject">Subject:</label>
+            <div class="input-container">
+                <i class="fas fa-question"></i>
+                <input type="text" name="subject" id="subject" required>
+            </div>
+
+            <label class="messagelabel" for="message">Message:</label>
+            <div class="input-container">
+                <i class="fas fa-comment"></i>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</div>
+
+<script>
+    var language = window.navigator.userLanguage || window.navigator.language;
+
+    if (language == "nl" || language == "nl-nl" || language == "nl-NL") {
+
+        $('#contact-title').text("Neem direct contact op")
+        $('#contact-subtitle').text("En ontvang een reactie binnen 1-2 werkdagen.");
+        $('.namelabel').text("Naam:");
+        $('.emaillabel').text("E-mail:");
+        $('.phonelabel').text("Telefoonnummer:");
+        $('.subjectlabel').text("Onderwerp:");
+        $('.messagelabel').text("Bericht:");
+        $('#responsive').text("Reagerend Ontwerp");
+        $('#submit').attr( "value", "Verstuur");
+    }
+</script>
+
+<script src="contactform.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

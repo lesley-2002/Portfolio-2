@@ -1,0 +1,44 @@
+<div class="my-services">
+    <div class="container">
+        <h2 id="my-services-title">My Services</h2>
+
+        <div class="devider"></div>
+
+        <div class="col">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3 id="development">Development</h3>
+            <p id="services-text1">I am able to code front and backend, so if you need a beautiful website with a fast and reliable system, you have come to the right address!</p>
+        </div>
+        <div class="col">
+            <div class="logo">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 id="responsive">Responive Design</h3>
+            <p id="services-text2">As you probably already know, there are many devices with all sorts of screen sizes. You cannot publish a website without it being responsive, and that's where I come in handy.</p>
+        </div>
+        <div class="col">
+            <div class="logo">
+                <i class="fas fa-drafting-compass"></i>
+            </div>
+            <h3 id="web-design">Web Design</h3>
+            <p id="services-text3">From fonts to logo's we've got you covered. We will ask about your demands, and we will work around it, with the help of years of experience with Photoshop</p>
+
+        </div>
+    </div>
+</div>
+<script>
+    var language = window.navigator.userLanguage || window.navigator.language;
+
+    if (language == "nl" || language == "nl-nl" || language == "nl-NL") {
+
+        $('#my-services-title').text("Mijn Diensten")
+        $('#development').text("Ontwikkeling");
+        $('#services-text1').text("Ik kan front- en backend coderen, dus als je een mooie website nodig hebt met een snel en betrouwbaar systeem, dan ben je bij ons aan het juiste adres!");
+        $('#responsive').text("Reagerend Ontwerp");
+        $('#services-text2').text("Zoals je waarschijnlijk al weet, zijn er veel toestellen met allerlei schermformaten. Je kunt een website niet publiceren zonder dat deze reageert op elk scherm, en daar kom ik goed van pas.")
+        $('#web-design').text("Web Design");
+        $('#services-text3').text("Van lettertypen tot logo's, we staan voor u klaar. We zullen naar uw wensen vragen en we zullen er omheen werken, met behulp van jarenlange ervaring met Photoshop");
+    }
+</script>

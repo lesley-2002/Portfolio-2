@@ -1,0 +1,48 @@
+<div class="faq">
+    <h1>FAQ</h1>
+    <div class="container">
+
+        <button class="accordion">
+            <h3 id="faq-1">Howmuch does it cost to make a website?</h3>
+        </button>
+        <div class="panel">
+            <p id="faq-1-txt">The costs highly fluctuate between websites, but the average is around &euro;1000,- </p>
+        </div>
+
+        <button class="accordion">
+            <h3 id="faq-2">
+                Howlong does it take to finish a website?
+            </h3>
+        </button>
+        <div class="panel">
+            <p id="faq-2-txt">I usally work around 1-2 weeks per website, with bigger websites like webshops with CMS it's around
+                3-4 weeks.</p>
+        </div>
+
+        <button class="accordion">
+            <h3 id="faq-3">
+                Can you edit an existing website?
+            </h3>
+        </button>
+        <div class="panel">
+            <p id="faq-3-txt">Ofcourse, there is no problem what so ever with editing an existing website, even when there are bugs
+                that you want me to fix.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var language = window.navigator.userLanguage || window.navigator.language;
+
+    if (language == "nl" || language == "nl-nl" || language == "nl-NL") {
+
+        $('#faq-1').text("Hoeveel kost het om een website te laten maken?");
+        $('#faq-1-txt').text("Het verschilt natuurlijk per project, maar het is gemiddeld zo'n 	\u20AC1000");
+        $('#faq-2').text("Hoelang duurt het voordat een project af is?");
+        $('#faq-2-txt').text("Ik werk meestal ongeveer 1-2 weken aan een website zonder grote systemen erachter. Maar als dit wel het geval is, zal dit uiteraard langer duren.");
+        $('#faq-3').text("Kan je ook mijn bestaande website bijwerken of problemen oplossen?");
+        $('#faq-3-txt').text("Ja zeker, er is geen enkel probleem om een bestaande website aan te passen.");
+    }
+</script>
+
+<script src="faq-handling.js"></script>
