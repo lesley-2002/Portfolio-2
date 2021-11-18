@@ -1,0 +1,129 @@
+.full-contact .container{
+    width: 80%;
+    margin: 3% auto;
+}
+
+.full-contact .container h2{
+    margin: 2% 0 0 2%;
+}
+.full-contact .container p{
+    margin: 0.5% 0 0 2%;
+}
+
+.full-contact .container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.full-contact .container .col-1{
+    width: 80%;
+    float: left;
+}
+
+.full-contact .container .col-2{
+    float: left;
+    width: 20%;
+}
+
+.full-contact .container .col-1{
+    border-radius: 15px 0 0 15px;
+}
+.full-contact .container .col-1 .contact-form{
+    margin: 0 auto;
+    border-radius: 15px ;
+    border: 1px solid black;
+    width: 90%;
+    display: flex;
+}
+
+.full-contact .container .col-1 .contact-form::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.full-contact .container .col-1 .contact-form .col-1{
+    float: left;
+    width: 30%;
+    background: #317ece;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    padding: 1%;
+    -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
+}
+
+.full-contact .container .col-1 .contact-form .col-1 h3{
+    font-size: 2.5em;
+}
+
+.full-contact .container .col-1 .contact-form .col-2{
+    float: left;
+    width: 70%;
+    margin: 0 auto;
+    padding: 3%;
+}
+.full-contact .container .col-1 .contact-form .col-2 input{
+    width: 100%;
+    font-size: 1.3em;
+}
+.full-contact .container .col-1 .contact-form .col-2 #submit{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #317ece;
+    border: none;
+    color: white;
+    font-size: 1.4em;
+    padding: 1%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+.full-contact .container .col-1 .contact-form .col-2 #submit:hover{
+    background-color: transparent;
+    color: #317ece;
+    border: #317ece 2px solid;
+}
+.full-contact .container .col-1 .contact-form .col-2 textarea{
+    width: 100%;
+    font-size: 1.5em;
+}
+.full-contact .container .col-1 .contact-form .col-2 label{
+    display: block;
+}
+.full-contact .container .col-1 .contact-form .col-2 .emaillabel,
+.full-contact .container .col-1 .contact-form .col-2 .phonelabel,
+.full-contact .container .col-1 .contact-form .col-2 .subjectlabel,
+.full-contact .container .col-1 .contact-form .col-2 .messagelabel,
+.full-contact .container .col-1 .contact-form .col-2 #submit{
+    margin-top: 1%;
+}
+
+.full-contact .container .col-2 h4{
+    color: #317ece;
+    font-size: 1.4em;
+}
+.full-contact .container .col-2 h5{
+    font-size: 1em;
+}
+.full-contact .container .col-2 h5 a{
+    color: #317ece;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .full-contact .container .col-1, .full-contact .container .col-2{
+        width: 100%;
+    }
+    .full-contact .container .col-1{
+        border-radius: 15px 15px 0 0;
+    }
+    .full-contact .container .col-1 .contact-form .col-1{
+        width: 100%;
+    }
+}

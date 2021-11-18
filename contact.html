@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png" />
+    <title>Contact Us - Le Hutch</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #info {
+            position: fixed;
+            color: white;
+            padding: 1%;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            display: none;
+            top: 1em;
+            left: 5%;
+            display: flex;
+        }
+
+        #info p {
+            width: 60%;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('#nav').load('components/nav.html');
+        });
+        $(function () {
+            $('#faq').load('components/faq.html');
+        });
+        $(function () {
+            $('#footer').load('components/footer.html');
+        });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165569653-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165569653-1');
+    </script>
+
+</head>
+
+<body>
+    <div class="cookie-banner" style="display: none;">
+        <p>
+            <span id="by-using">By using our website, you agree to our</span>
+            <a href="privacy-policy.html"><span id="privacy-link">Privacy Policy</span></a>
+            <i class="fas fa-times close"></i>
+        </p>
+
+    </div>
+
+    <nav id="nav"></nav>
+    <div class="bg-img">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="full-contact">
+        <div class="container">
+            <div class="col-1">
+                <div class="contact">
+                    <h2 id="contact-title">Contact us now</h2>
+                    <p id="contact-subtitle">And recieve a respond within 1-2 businessdays</p>
+
+
+                    <div class="contact-form">
+                        <div class="col-1">
+                            <img src="assets/logo-contact.png" alt="">
+                        </div>
+                        <div class="col-2">
+                            <form id="form" action="">
+
+                                <div id="info"></div>
+                                <label class="namelabel" for="name">Name:</label>
+                                <div class="input-container">
+                                    <i class="fas fa-user-alt"></i>
+                                    <input type="text" name="name" id="name" required>
+                                </div>
+
+
+                                <label class="emaillabel" for="email">E-mail:</label>
+                                <div class="input-container">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+
+                                <label class="phonelabel" for="phone">Phone:</label>
+                                <div class="input-container">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="text" name="phone" id="phone">
+                                </div>
+
+                                <label class="subjectlabel" for="subject">Subject:</label>
+                                <div class="input-container">
+                                    <i class="fas fa-question"></i>
+                                    <input type="text" name="subject" id="subject" required>
+                                </div>
+
+                                <label class="messagelabel" for="message">Message:</label>
+                                <div class="input-container">
+                                    <i class="fas fa-comment"></i>
+                                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                                </div>
+
+                                <input type="submit" id="submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <h4 id="busi-details">Business Details</h4>
+
+                <h5><strong id="busi-phone">Phone: </strong><a href="tel:0649232486">+31 6 49 232 486</a></h5>
+                <h5><strong id="busi-email">Email: </strong><a href="mail:info@lehutch.nl">info@lehutch.nl</a></h5>
+                <br>
+                <h5><strong>Kvk: </strong>80118186</h5>
+                <h5><strong>BTW-ID: </strong>NL003401134B60</h5>
+                <h5><strong>IBAN: </strong>NL04 RABO 0357 8537 41</h5>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="faq"></div>
+
+    <div id="footer"></div>
+    <script src="cookie-banner.js"></script>
+    <script src="faq-handling.js"></script>
+    <script src="contactform.js"></script>
+
+    <script>
+        var language = window.navigator.userLanguage || window.navigator.language;
+
+        if (language == "nl" || language == "nl-nl" || language == "nl-NL") {
+            $('#by-using').text("Door gebruik te maken van deze website gaat u akkoord met de");
+            $('#privacy-link').text("Privacy voorwaarden");
+            $('#contact-title').text("Neem direct contact op")
+            $('#contact-subtitle').text("En ontvang een reactie binnen 1-2 werkdagen.");
+            $('.namelabel').text("Naam:");
+            $('.emaillabel').text("E-mail:");
+            $('.phonelabel').text("Telefoonnummer:");
+            $('.subjectlabel').text("Onderwerp:");
+            $('.messagelabel').text("Bericht:");
+            $('#responsive').text("Reagerend Ontwerp");
+            $('#submit').attr("value", "Verstuur");
+            $('#busi-details').text("Bedrijfsgegevens");
+            $('#busi-phone').text("Telefoon: ");
+            $('#busi-email').text("E-mail: ");
+        }
+    </script>
+
+</body>

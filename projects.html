@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Projects - Le Hutch</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <style>
+        #info {
+            position: fixed;
+            color: white;
+            padding: 1%;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            display: none;
+            top: 1em;
+            left: 5%;
+            display: flex;
+        }
+
+        #info p {
+            width: 60%;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('#nav').load('components/nav.html');
+        });
+        $(function(){
+            $('#projects').load('components/projects.html');
+        });
+        $(function(){
+            $('#contact').load('components/contact.html');
+        });
+        $(function(){
+            $('#faq').load('components/faq.html');
+        });
+        $(function(){
+            $('#footer').load('components/footer.html');
+        });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165569653-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165569653-1');
+    </script>
+    
+</head>
+
+<body>
+
+    <div class="cookie-banner" style="display: none;">
+        <p>
+            By using our website, you agree to our
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <i class="fas fa-times close"></i>
+        </p>
+    </div>
+
+    <nav id="nav"></nav>
+
+    <div class="bg-img">
+        <h1>Projects</h1>
+    </div>
+    <div id="projects"></div>
+
+    <div id="contact"></div>
+
+    <div id="faq"></div>
+
+    <div id="footer"></div>
+    <script src="faq-handling.js"></script>
+    <script src="contactform.js"></script>
+    <script>
+        var language = window.navigator.userLanguage || window.navigator.language;
+
+        if (language == "nl" || language == "nl-nl" || language == "nl-NL") {
+            $('#by-using').text("Door gebruik te maken van deze website gaat u akkoord met de");
+            $('#privacy-link').text("Privacy voorwaarden");
+        }
+    </script>
+</body>
